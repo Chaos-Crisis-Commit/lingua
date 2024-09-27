@@ -1,0 +1,30 @@
+{
+    "I": {
+      "part of speech": "pronoun",
+      "meaning": "the person speaking or writing"
+    },
+    "am": {
+      "part of speech": "verb",
+      "meaning": "first person singular present of 'be', indicating a state of being"
+    },
+    "in": {
+      "part of speech": "preposition",
+      "meaning": "used to indicate inclusion within a space, a place, or limits"
+    },
+    "love": {
+      "part of speech": "noun",
+      "meaning": "a strong feeling of affection and care"
+    },
+    "with": {
+      "part of speech": "preposition",
+      "meaning": "accompanied by another person or thing"
+    },
+    "cheese": {
+      "part of speech": "noun",
+      "meaning": "a food made from the pressed curds of milk"
+    },
+    "curds": {
+      "part of speech": "noun",
+      "meaning": "the thickened part of milk that forms during the process of making cheese"
+    }
+  }

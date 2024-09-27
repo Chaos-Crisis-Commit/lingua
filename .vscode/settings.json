@@ -1,0 +1,12 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.linting.lintOnSave": false,
+    "python.linting.enabled": false,
+    "liveshare.allowGuestDebugControl": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+      },
+      "isort.args":["--profile", "black"],
+}

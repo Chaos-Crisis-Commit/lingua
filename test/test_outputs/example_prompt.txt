@@ -1,0 +1,8 @@
+Break down the sentence "I am in love with cheese curds" using parts of speech and meaning of each word, split into a json-like object with labels for keys and parts of speech for value. For example,
+
+{
+  "word": {
+    "part of speech": "noun",
+    "meaning": "something you say"
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "私": {
+      "part of speech": "pronoun",
+      "meaning": "I, me"
+    },
+    "の": {
+      "part of speech": "particle",
+      "meaning": "indicates possession, 'of' or 'my'"
+    },
+    "家": {
+      "part of speech": "noun",
+      "meaning": "house, home"
+    },
+    "は": {
+      "part of speech": "particle",
+      "meaning": "topic marker, indicates the topic of the sentence"
+    },
+    "大きい": {
+      "part of speech": "adjective",
+      "meaning": "big, large"
+    },
+    "です": {
+      "part of speech": "copula",
+      "meaning": "polite ending of a sentence, similar to 'is'"
+    }
+  }

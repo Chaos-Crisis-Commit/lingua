@@ -1,0 +1,9 @@
+{
+    "example_1": {
+        "userID": "1234",
+        "userName": "Tono",
+        "targetLang": "jp",
+        "nativeLang": "en",
+        "langLevel": "n5"
+    }
+}
