@@ -2,6 +2,7 @@
 # type: ignore
 """
 Test Utility and main functionality of bot
+Gives verbose feedback on processes using debug logger
 
 Current Functionalities:
     User creation
@@ -12,6 +13,24 @@ Current Functionalities:
 
 import pathlib
 import json
+import logging
+import sys
+
+
+def help_lingua():
+    print("help")
+
+
+def add_user():
+    print("adduser")
+
+
+def add_sentence():
+    print("addsentence")
+
+
+def test_quiz():
+    print("testquiz")
 
 
 def parse_input(text):
@@ -23,12 +42,22 @@ def parse_input(text):
         adduser
         addsentence
         testquiz
-        test
-
     """
+    commands = {
+        "help": help_lingua,
+        "adduser": add_user,
+        "addsentence": add_sentence,
+        "testquiz": test_quiz,
+    }
+
+    commands[text]()
 
 
 def cli():
+    """Run CLI"""
+
+    logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
+
     print("\n\nLingua Bot test CLI")
     print(
         "Test Utility and main functionality of bot\n\n"
@@ -45,7 +74,7 @@ def cli():
     # config = Configuration(ctx)
 
     # Database
-    print(">>> Instantiating test database...\n")
+    print("...Instantiating test database...\n")
     # if not ctx["database"]:
     #    config.setup_database()
 
@@ -58,15 +87,19 @@ def cli():
     with open(user_path) as f:
         user = json.load(f)
 
-    print("\n...current user:\n")
+    print("...current user:")
     print(user)
 
     # Done
     print("\n...Done with instantiation...\n")
 
     # Get input
-    user_in = input("Input command, for list of commands type 'help':\n>>>")
-    parse_input(user_in)
+    user_in = ""
+    while user_in != "quit":
+        user_in = input("Input command, for list of commands type 'help':\n>>> ")
+        if user_in == "quit":
+            continue
+        parse_input(user_in)
 
 
 if __name__ == "__main__":

@@ -6,7 +6,18 @@
     "liveshare.allowGuestDebugControl": true,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.rulers": [80]
       },
       "isort.args":["--profile", "black"],
+      "pylint.cwd": "${workspaceFolder}/src",
+      "pylint.severity": {
+        "convention": "Information",
+        "error": "Error",
+        "fatal": "Error",
+        "refactor": "Hint",
+        "warning": "Warning",
+        "info": "Information"
+      },
+      "pylint.args": ["--max-line-length=80"]
 }
